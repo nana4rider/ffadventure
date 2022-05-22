@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    volumes:
+      - ./web:/usr/local/apache2/htdocs
+    ports:
+      - "80:80"
